@@ -8,4 +8,4 @@ do
   EXCLUDE+=" --exclude $p/node_modules"
 done;
 
-tar $EXCLUDE -zcf - bin/merge-deps.js _common/dep-merge.js $PROJECTS | docker build --build-arg GIT_HASH=${GIT_HASH} -t biowonks/mist-api:${GIT_HASH} -f mist-api/Dockerfile -
+tar $EXCLUDE -zcf - bin/merge-deps.js _common/dep-merge.js $PROJECTS | docker build --build-arg GIT_HASH=${GIT_HASH} -t bioliners/mist-api:${GIT_HASH} -f mist-api/Dockerfile -
