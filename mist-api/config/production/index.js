@@ -2,6 +2,6 @@
 
 module.exports = {
 	server: {
-		baseUrl: 'https://api.mistdb.com/v1'
+		baseUrl: 'https://mib-jouline-db.asc.ohio-state.edu/v1'
 	}
 }

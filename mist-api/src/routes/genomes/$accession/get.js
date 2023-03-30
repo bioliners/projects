@@ -9,6 +9,7 @@ module.exports = function(app, middlewares, routeMiddlewares) {
       accessibleModels: [
         models.WorkerModule,
         models.Component,
+        models.BioSample,
       ],
     }),
     helper.findHandler('accession', 'version'),
