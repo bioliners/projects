@@ -11,7 +11,7 @@ This repository houses several of the BioWonks projects as a **[monorepo](http:/
 * [mist-api](mist-api/readme.md): RESTful API for interacting with the MiST database
 * [mist-pg-db](mist-pg-db/readme.md): Docker setup for running PostgreSQL database
 * [mist-pipeline](mist-pipeline/readme.md): distributed, computational pipeline for analyzing microbial genomes for signal transduction
-* *mist-web*: React.js powered front end web application for easily exploring the MiST database (not yet started)
+* [mist-web](https://github.com/ToshkaDev/mist-web-v): Angular powered front end web application for easily exploring the MiST database
 
 Each of the above projects is independent from the others apart from explicit linking. For example, the *mist-pipeline* has symlinks to *core-lib*, *seqdepot-lib*, and *mist-lib*.
 
