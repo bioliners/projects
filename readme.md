@@ -1,17 +1,16 @@
-# BioWonks Projects
+# MiST Projects
 
-> Heavy development underway! Please be advised this repository and its sub-projects are currently under active development. This documentation here will be updated as time and resources permit.
+This repository houses several of the MiST projects as a **[monorepo](http://danluu.com/monorepo/)** (thus the vague moniker, "projects"). With the exception of directories beginning with an underscore or period (.) and the bin/ directory, each top-level folder represents a main project. Currently this repository contains the following projects:
 
-This repository houses several of the BioWonks projects as a **[monorepo](http://danluu.com/monorepo/)** (thus the vague moniker, "projects"). With the exception of directories beginning with an underscore or period (.) and the bin/ directory, each top-level folder represents a main project. Currently this repository contains the following projects:
-
-* [core-lib](core-lib/readme.md): core library containing generic functionality intended to be shared across multiple projects
-* [fql](fql/readme.md): Feature Query Language specification and reference implementation for querying biological sequences and their associated features (e.g. domains)
-* [seqdepot-lib](seqdepot-lib/readme.md): set of modules powering SeqDepot
-* [mist-lib](mist-lib/readme.md): set of modules powering the next generation of MiST
-* [mist-api](mist-api/readme.md): RESTful API for interacting with the MiST database
-* [mist-pg-db](mist-pg-db/readme.md): Docker setup for running PostgreSQL database
-* [mist-pipeline](mist-pipeline/readme.md): distributed, computational pipeline for analyzing microbial genomes for signal transduction
-* [mist-web](https://github.com/ToshkaDev/mist-web-v): Angular powered front end web application for easily exploring the MiST database
+* **Backend**
+  * [core-lib](core-lib): core library containing generic functionality intended to be shared across multiple projects
+  * [seqdepot-lib](seqdepot-lib/): set of modules powering SeqDepot
+  * [mist-lib](mist-lib): set of modules powering the next generation of MiST
+  * [mist-api](mist-api): RESTful API for interacting with the MiST database
+  * [mist-pg-db](mist-pg-db): Docker setup for running PostgreSQL database
+  * [mist-pipeline](mist-pipeline): distributed, computational pipeline for analyzing microbial genomes for signal transduction
+* **Frontend**
+  * [mist-web](https://github.com/ToshkaDev/mist-web-v): Angular powered front end web application for easily exploring the MiST database
 
 Each of the above projects is independent from the others apart from explicit linking. For example, the *mist-pipeline* has symlinks to *core-lib*, *seqdepot-lib*, and *mist-lib*.
 
