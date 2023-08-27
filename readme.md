@@ -17,7 +17,7 @@ Each of the above projects is independent from the others apart from explicit li
 This structuring of our projects has made development signficantly easier without having to tediously deal with versioning issues and other build issues. The major pain point with this approach is having to write custom scripts for performing tasks that would be otherwise simple and straightforward with a repo per project. For example, if making a change to *mist-pipeline*, there is no need to re-run all the tests in parent or unrelated projects like *core-lib*.
 
 ## General Requirements
-To effectively leverage and use the BioWonks projects, it is necessary to have the following tools:
+To effectively leverage and use the MiST projects, it is necessary to have the following tools:
 
 * [git](https://git-scm.com/)
 * [Node.js](https://nodejs.org) - we recommend using [NVM](https://github.com/creationix/nvm) to install version 8.x
@@ -33,9 +33,9 @@ Node is used for various scripting tasks as well as other tooling helpers (e.g. 
 ## Setup
 Clone the repository:
 ```bash
-$ mkdir ~/biowonks
-$ cd ~/biowonks
-$ git clone https://github.com/biowonks/projects.git
+$ mkdir ~/mist
+$ cd ~/mist
+$ git clone https://github.com/bioliners/projects.git
 $ cd projects
 ```
 
