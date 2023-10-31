@@ -240,11 +240,11 @@ class SeedNewGenomes extends OncePipelineModule {
   }
 
   genomeDataFromRow_(row) {
-    const refseqAccessionParts = mutil.parseAccessionVersion(row['# assembly_accession']);
+    const refseqAccessionParts = mutil.parseAccessionVersion(row['#assembly_accession']);
     const genbankAccessionParts = mutil.parseAccessionVersion(row.gbrs_paired_asm);
     const genomeData = {
       accession: refseqAccessionParts[0],
-      version: row['# assembly_accession'],
+      version: row['#assembly_accession'],
       version_number: refseqAccessionParts[1],
       genbank_accession: genbankAccessionParts[0],
       genbank_version: row.gbrs_paired_asm,

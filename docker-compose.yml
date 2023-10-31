@@ -32,7 +32,7 @@ services:
 
   # -------------------------------------------------------
   pg-db:
-    image: biowonks/mist-pg-db:fbbac35
+    image: bioliners/mist-pg-db:17f797d
     volumes:
       - db-13.3:/var/lib/postgresql/data
     environment:
