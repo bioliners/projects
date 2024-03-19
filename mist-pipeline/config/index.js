@@ -118,7 +118,24 @@ const config = {
   // Specific module configuration
   seedNewGenomes: {
     summaryFileDuration,
-    maxNewGenomesPerRun: 5,
+    maxNewGenomesPerRun: 50,
+    assemblySummaryLinks: [
+      {
+        url:
+          'ftp://ftp.ncbi.nih.gov/genomes/refseq/archaea/assembly_summary.txt',
+        fileName: 'archaea-assembly-summary.tsv',
+      },
+      {
+        url:
+          'ftp://ftp.ncbi.nih.gov/genomes/refseq/bacteria/assembly_summary.txt',
+        fileName: 'bacteria-assembly-summary.tsv',
+      },
+    ],
+  },
+
+  seedNewGenomesByRefSeqId: {
+    summaryFileDuration,
+    maxNewGenomesPerRun: 0,
     assemblySummaryLinks: [
       {
         url:
